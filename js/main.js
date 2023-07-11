@@ -68,7 +68,7 @@ document.addEventListener('DOMContentLoaded', function() {
     <div class="container-fluid">
     <!-- logo start -->
     <img class="navbar-brand" style="height:100px;width:150px;"
-      src="https://bloxcosite.github.io/bloxcosite/img/BloxcoLogo.png" draggable="false"></img>
+      src="https://cdn.discordapp.com/attachments/742012486726975518/1128287832918724740/BloxcoLogo.png" draggable="false"></img>
     <!-- logo end -->
     <!-- phone only: navbar toggler burger menu start -->
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"

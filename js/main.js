@@ -121,7 +121,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 /* LINK FUNCTION, OPEN A PLATFORM LINK BY USING THE PROVIDED PARAMETERS */
 function link(platform, linktype, extension, extension2, extension3) {
-  let url = "https://bloxcosite.github.io/bloxcosite/error.html?c=F001"
+  let url = "https://bloxco.org/error.html?c=F001"
 
   if (platform == 'rblx') { /* if platform is roblox */
    if (linktype == 'gamepass') {

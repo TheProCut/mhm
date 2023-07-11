@@ -1,0 +1,87 @@
+/* DEFINE THE VARIABLES FOR EASY USE */
+:root {
+  --bloxco-blue: #2049A4;
+  --hyra-blue: #BFDBFE;
+  --hyra-purple: #DDD6FE;
+  --hyra-yellow: #FEF08A;
+  --hyra-cyan: #A5F3FC;
+  --hyra-pink: #FBCFE8;
+  --hyra-green: #BBF7D0;
+  --hyra-orange: #FED7AA;
+}
+
+/* Change selection color */
+::-moz-selection {
+  color: white;
+  background: var(--bloxco-blue);
+}
+
+::selection {
+  color: white;
+  background: var(--bloxco-blue);
+}
+
+/* make text (if any) on the navbar logo transparent (so people can't see it) */
+.navbar-brand {
+  color: transparent;
+}
+
+.pfp {
+  cursor: pointer; /* make it so when hovering over the pfps, the mouse gets a click finger */
+}
+
+.profilecard {
+  min-height: 100%;
+}
+
+.card {
+  min-height: 100%;
+}
+
+.disclaimer {
+  font-size: 15px;
+}
+
+.accent {
+  color: var(--bloxco-blue);
+}
+
+.aka {
+  font-size: 16px;
+  font-weight: lighter;
+  /* color: var(--bloxco-blue) */
+}
+
+/* HYRA BACKGROUND COLORS START */
+.bgh-orange {
+  background-color: var(--hyra-orange);
+}
+.bgh-green {
+  background-color: var(--hyra-green);
+}
+.bgh-pink {
+  background-color: var(--hyra-pink);
+}
+.bgh-cyan {
+  background-color: var(--hyra-cyan);
+}
+.bgh-blue {
+  background-color: var(--hyra-blue);
+}
+.bgh-purple {
+  background-color: var(--hyra-purple);
+}
+.bgh-yellow {
+  background-color: var(--hyra-yellow);
+}
+/* HYRA BACKGROUND COLORS END */
+
+section {
+  margin-left: 2%;
+}
+
+.noselect {
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+}

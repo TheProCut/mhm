@@ -68,7 +68,7 @@ document.addEventListener('DOMContentLoaded', function() {
     <div class="container-fluid">
     <!-- logo start -->
     <img class="navbar-brand" style="height:100px;width:150px;"
-      src="https://cdn.discordapp.com/attachments/742012486726975518/1128287832918724740/BloxcoLogo.png" draggable="false"></img>
+      src="https://media.discordapp.net/attachments/742012486726975518/1128303079914229891/bloxcologo.png" draggable="false"></img>
     <!-- logo end -->
     <!-- phone only: navbar toggler burger menu start -->
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
@@ -119,16 +119,7 @@ document.addEventListener('DOMContentLoaded', function() {
     nav.innerHTML = navContent;
   });
 
-/* ROBLOX LINK FEATURE, OPEN A ROBLOX LINK BY USING THE PROVIDED PARAMETERS */
-function robloxlink(linktype, id) {
-    let url = "http://127.0.0.1:3000/error.html?c=F001"
-    if (linktype == 'gamepass') {
-        url = "https://www.roblox.com/game-pass/" + id
-    }
-
-    window.open(url,'_blank');
-}
-
+/* LINK FUNCTION, OPEN A PLATFORM LINK BY USING THE PROVIDED PARAMETERS */
 function link(platform, linktype, extension, extension2, extension3) {
   let url = "https://bloxcosite.github.io/bloxcosite/error.html?c=F001"
 

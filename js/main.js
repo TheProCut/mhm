@@ -96,10 +96,12 @@ document.addEventListener('DOMContentLoaded', function() {
 
       <li class="nav-item dropdown">
       <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-        Bloxco Socials
+        Important Links
       </a>
       <ul class="dropdown-menu">
-      <li><a class="dropdown-item" href="http://www.google.com/url?q=http%3A%2F%2Fdiscord.gg%2FbPQMeZA4PW&sa=D&sntz=1&usg=AOvVaw37-CqJKaqRmebJ85BslNR5" target="_blank"><strong>Discord Server</strong></a></li>
+        <li><a class="dropdown-item" href="https://www.roblox.com/games/9901611189/Bloxco-Supermarket" target="_blank"><strong>Play</strong> the Game</a></li>
+        <li><a class="dropdown-item" href="https://www.roblox.com/groups/6235775/Bloxco-Supermarket#!/about" target="_blank"><strong>Join</strong> our Group</a></li>
+        <li><a class="dropdown-item" href="http://www.google.com/url?q=http%3A%2F%2Fdiscord.gg%2FbPQMeZA4PW&sa=D&sntz=1&usg=AOvVaw37-CqJKaqRmebJ85BslNR5" target="_blank"><strong>Discord Server</strong></a></li>
         <li><a class="dropdown-item" href="https://www.google.com/url?q=https%3A%2F%2Fwww.tiktok.com%2F%40bloxcosocials&sa=D&sntz=1&usg=AOvVaw3UkVZebmGMHrey-aJnuPT8" target="_blank">TikTok</a></li>
         <li><a class="dropdown-item" href="https://www.google.com/url?q=https%3A%2F%2Finstagram.com%2Fbloxco_socials%3Figshid%3DYmMyMTA2M2Y%3D&sa=D&sntz=1&usg=AOvVaw24aap0fvGWbeUwKKhDGaJv" target="_blank">Instagram</a></li>
         <li><a class="dropdown-item" href="https://www.google.com/url?q=https%3A%2F%2Ftwitter.com%2FBloxcoSocials&sa=D&sntz=1&usg=AOvVaw2m7nE1lR4qeN_NRLM472uc" target="_blank">Twitter</a></li>

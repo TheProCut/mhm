@@ -36,7 +36,6 @@ function displayInfo(username, userid, command) {
 if (!authPrm) {
   sectionElement.textContent = "You cannot view this page."
 } else {
-    // Call the displayInfo function with provided parameters
     displayInfo(usernamePrm, useridPrm, cmdPrm);
 }
 

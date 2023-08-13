@@ -25,6 +25,7 @@ const cmdPrm = urlParams.get('cmd');
 const authPrm = urlParams.get('auth')
 const usernameElement = document.getElementById('username');
 const cmdElement = document.getElementById('cmd');
+const sectionElement = document.getElementById('s1');
 
 function displayInfo(username, userid, command) {
     usernameElement.textContent = username;
@@ -32,6 +33,6 @@ function displayInfo(username, userid, command) {
     
 }
 
-if (!auth) {
-  document.textContent = "You cannot view this page."
+if (!authPrm) {
+  sectionElement.textContent = "You cannot view this page."
 }

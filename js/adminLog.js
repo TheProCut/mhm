@@ -34,11 +34,16 @@ const timeElement = document.getElementById('time');
 const placeElement = document.getElementById('place');
 const sectionElement = document.getElementById('s1');
 
+const hyrabtn = document.getElementById('hyrabtn');
+const robloxbtn = document.getElementById('robloxbtn');
+
+
 function displayInfo(username, userid, command, rank, time, place) {
     usernameElement.textContent = username;
     cmdElement.textContent = command;
     rankElement.textContent = rank;
-    
+    hyrabtn.textContent = "View "+username+"'s Hyra Profile"
+    robloxbtn.textContent = "View "+username+"'s Roblox Profile"
     const date = new Date(time * 1000);
     timeElement.textContent = date.toLocaleString();
     

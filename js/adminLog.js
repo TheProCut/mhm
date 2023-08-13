@@ -14,7 +14,7 @@ _      _
 /* Name: adminLog.js */
 /* Author: zertybee_5 */
 /* Created (DD-MM-YYYY @ HH:MM): 13-08-2023 @ 21:13CEST */
-/* Updated (DD-MM-YYYY @ HH:MM): 08-07-2023 @ 18:48CEST */
+/* Updated (DD-MM-YYYY @ HH:MM): 14-08-2023 @ UNDEFINED:UNDEFINED CEST */
 /* Use: Provides information about the command used, and the user who used it. */
 /* Notes: Script only used on adminlog.html */
 

@@ -45,9 +45,9 @@ function displayInfo(username, userid, command, rank, time, place) {
     hyrabtn.textContent = "View "+username+"'s Hyra Profile"
     robloxbtn.textContent = "View "+username+"'s Roblox Profile"
     const date = new Date(time * 1000);
-    timeElement.textContent = date.toLocaleString();
+    timeElement.textContent = date.toLocaleString()+" (MM/DD/YYYY, timestamp in your local time)";
     
-    placeElement.textContent = place+" (MM/DD/YYYY, timestamp in your local time)";
+    placeElement.textContent = place;
 }
 
 if (!authPrm) {

@@ -33,12 +33,6 @@ function displayInfo(username, userid, command) {
     
 }
 
-function btn(platform) {
-  if platform == 'Hyra' {
-    window.open('https://app.hyra.io/6338747abe283e70e7d5b28b/staff/profile/'+useridPrm, '_blank')
-  }
-}
-
 if (!authPrm) {
   sectionElement.textContent = "You cannot view this page."
 } else {

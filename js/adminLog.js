@@ -57,7 +57,6 @@ if (!authPrm) {
 }
 
 function btn(platform) {
-  const playerName = usernamePrm
   if (platform === 'Hyra') {
     window.open(`https://app.hyra.io/6338747abe283e70e7d5b28b/staff/profile/${useridPrm}`, '_blank');
   } else if (platform === 'Rblx') {

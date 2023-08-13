@@ -39,11 +39,10 @@ function displayInfo(username, userid, command, rank, time, place) {
     cmdElement.textContent = command;
     rankElement.textContent = rank;
     
-    // Convert epoch time to human-readable format (assuming timePrm is in seconds)
     const date = new Date(time * 1000);
-    timeElement.textContent = date.toLocaleString(); // Change format as needed
+    timeElement.textContent = date.toLocaleString();
     
-    placeElement.textContent = place;
+    placeElement.textContent = place+" (MM/DD/YYYY, timestamp in your local time)";
 }
 
 if (!authPrm) {
@@ -53,7 +52,7 @@ if (!authPrm) {
 }
 
 function btn(platform) {
-  const playerName = usernamePrm || 'USERNAME'; // Default to 'USERNAME' if not available
+  const playerName = usernamePrm
   if (platform === 'Hyra') {
     window.open(`https://app.hyra.io/6338747abe283e70e7d5b28b/staff/profile/${useridPrm}`, '_blank');
   } else if (platform === 'Rblx') {

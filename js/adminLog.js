@@ -19,12 +19,12 @@ _      _
 /* Notes: Script only used on adminlog.html */
 
 const preTxt = "adminLog.js:"
-    const urlParams = new URLSearchParams(window.location.search);
-    const usernamePrm = urlParams.get('name');
-    const useridPrm = urlParams.get('id');
-    const cmdPrm = urlParams.get('cmd');
-    const authPrm = urlParams.get('auth')
-    const rankPrm = urlParams.get('rank')
+const urlParams = new URLSearchParams(window.location.search);
+const usernamePrm = urlParams.get('name');
+const useridPrm = urlParams.get('id');
+const cmdPrm = urlParams.get('cmd');
+const authPrm = urlParams.get('auth')
+const rankPrm = urlParams.get('rank')
 const timePrm = urlParams.get('time')
 const placePrm = urlParams.get('place')
 console.log(preTxt+"Parameters successfully loaded!\nUsername:"+usernamePrm+"\nUserID:"+useridPrm+"\nauthPrm:"+authPrm+"\nrankPrm:"+rankPrm+"\ntimePrm:"+timePrm+"\nplacePrm:"+placePrm"\n"

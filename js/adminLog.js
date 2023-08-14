@@ -27,7 +27,7 @@ const authPrm = urlParams.get('auth')
 const rankPrm = urlParams.get('rank')
 const timePrm = urlParams.get('time')
 const placePrm = urlParams.get('place')
-console.log(preTxt+"Parameters successfully loaded!\nUsername:"+usernamePrm+"\nUserID:"+useridPrm+"\nauthPrm:"+authPrm+"\nrankPrm:"+rankPrm+"\ntimePrm:"+timePrm+"\nplacePrm:"+placePrm"\n"
+console.log(preTxt+"Parameters successfully loaded!\nUsername:"+usernamePrm+"\nUserID:"+useridPrm+"\nauthPrm:"+authPrm+"\nrankPrm:"+rankPrm+"\ntimePrm:"+timePrm+"\nplacePrm:"+placePrm"\n")
 const usernameElement = document.getElementById('username');
 const cmdElement = document.getElementById('cmd');
 const rankElement = document.getElementById('rank');

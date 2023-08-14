@@ -18,17 +18,18 @@ _      _
 /* Use: Provides information about the command used, and the user who used it. */
 /* Notes: Script only used on adminlog.html */
 
+const preTxt = "adminLog.js:"
     const urlParams = new URLSearchParams(window.location.search);
     const usernamePrm = urlParams.get('name');
     const useridPrm = urlParams.get('id');
     const cmdPrm = urlParams.get('cmd');
     const authPrm = urlParams.get('auth')
     const rankPrm = urlParams.get('rank')
-    const timePrm = urlParams.get('time')
-    const placePrm = urlParams.get('place')
-
-    const usernameElement = document.getElementById('username');
-    const cmdElement = document.getElementById('cmd');
+const timePrm = urlParams.get('time')
+const placePrm = urlParams.get('place')
+console.log(preTxt+"Parameters successfully loaded!\nUsername:"+usernamePrm+"\nUserID:"+useridPrm+"\nauthPrm:"+authPrm+"\nrankPrm:"+rankPrm+"\ntimePrm:"+timePrm+"\nplacePrm:"+placePrm"\n"
+const usernameElement = document.getElementById('username');
+const cmdElement = document.getElementById('cmd');
     const rankElement = document.getElementById('rank');
     const timeElement = document.getElementById('time');
     const placeElement = document.getElementById('place');

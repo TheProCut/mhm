@@ -37,26 +37,26 @@ const pfpElement = document.getElementById('pfp');
 const hyrabtn = document.getElementById('hyrabtn');
 const robloxbtn = document.getElementById('robloxbtn');
 
-    function displayInfo(username, userid, command, rank, time, place) {
-      usernameElement.textContent = username;
-      cmdElement.textContent = command;
-      rankElement.textContent = rank;
-      hyrabtn.textContent = `View ${username}'s Hyra Profile`;
-      robloxbtn.textContent = `View ${username}'s Roblox Profile`;
-      const date = new Date(time * 1000);
-      timeElement.textContent = date.toLocaleString();
-      placeElement.textContent = place;
-      pfpElement.src = `https://bloxtech.tech/admin/api/userthumb.php?userId=${userid}&width=75&height=75&format=png`;
-      console.log(preTxt+"displayInfo ran successfully. Page loaded.")
-    }
+function displayInfo(username, userid, command, rank, time, place) {
+  usernameElement.textContent = username;
+  cmdElement.textContent = command;
+  rankElement.textContent = rank;
+  hyrabtn.textContent = `View ${username}'s Hyra Profile`;
+  robloxbtn.textContent = `View ${username}'s Roblox Profile`;
+  const date = new Date(time * 1000);
+  timeElement.textContent = date.toLocaleString();
+  placeElement.textContent = place;
+  pfpElement.src = `https://bloxtech.tech/admin/api/userthumb.php?userId=${userid}&width=75&height=75&format=png`;
+  console.log(preTxt+"displayInfo ran successfully. Page loaded.")
+}
 
-    if (!authPrm) {
-      sectionElement.textContent = "You cannot view this page.";
-      console.warn(preTxt+"User has no permission to view the page.")
-    } else {
-      console.log(preTxt+"Loading page by displayInfo()..")
-      displayInfo(usernamePrm, useridPrm, cmdPrm, rankPrm, timePrm, placePrm);
-    }
+if (!authPrm) {
+  sectionElement.textContent = "You cannot view this page.";
+  console.warn(preTxt+"User has no permission to view the page.")
+} else {
+  console.log(preTxt+"Loading page by displayInfo()..")
+  displayInfo(usernamePrm, useridPrm, cmdPrm, rankPrm, timePrm, placePrm);
+}
 
 function btn(platform) {
   if (platform === 'Hyra') {

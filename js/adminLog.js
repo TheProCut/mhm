@@ -30,12 +30,12 @@ const placePrm = urlParams.get('place')
 console.log(preTxt+"Parameters successfully loaded!\nUsername:"+usernamePrm+"\nUserID:"+useridPrm+"\nauthPrm:"+authPrm+"\nrankPrm:"+rankPrm+"\ntimePrm:"+timePrm+"\nplacePrm:"+placePrm"\n"
 const usernameElement = document.getElementById('username');
 const cmdElement = document.getElementById('cmd');
-    const rankElement = document.getElementById('rank');
-    const timeElement = document.getElementById('time');
-    const placeElement = document.getElementById('place');
-    const pfpElement = document.getElementById('pfp');
-    const hyrabtn = document.getElementById('hyrabtn');
-    const robloxbtn = document.getElementById('robloxbtn');
+const rankElement = document.getElementById('rank');
+const timeElement = document.getElementById('time');
+const placeElement = document.getElementById('place');
+const pfpElement = document.getElementById('pfp');
+const hyrabtn = document.getElementById('hyrabtn');
+const robloxbtn = document.getElementById('robloxbtn');
 
     function displayInfo(username, userid, command, rank, time, place) {
       usernameElement.textContent = username;
@@ -47,18 +47,23 @@ const cmdElement = document.getElementById('cmd');
       timeElement.textContent = date.toLocaleString();
       placeElement.textContent = place;
       pfpElement.src = `https://bloxtech.tech/admin/api/userthumb.php?userId=${userid}&width=75&height=75&format=png`;
+      console.log(preTxt+"displayInfo ran successfully. Page loaded.")
     }
 
     if (!authPrm) {
       sectionElement.textContent = "You cannot view this page.";
+      console.warn(preTxt+"User has no permission to view the page.")
     } else {
+      console.log(preTxt+"Loading page by displayInfo()..")
       displayInfo(usernamePrm, useridPrm, cmdPrm, rankPrm, timePrm, placePrm);
     }
 
 function btn(platform) {
   if (platform === 'Hyra') {
     window.open(`https://app.hyra.io/6338747abe283e70e7d5b28b/staff/profile/${useridPrm}`, '_blank');
+    console.log(preTxt+"Hyra button clicked. User opened url:"+`https://app.hyra.io/6338747abe283e70e7d5b28b/staff/profile/${useridPrm}`)
   } else if (platform === 'Rblx') {
     window.open(`https://www.roblox.com/users/${useridPrm}/profile`, '_blank');
+    console.log(preTxt+"Roblox button clicked. User opened url:"+`https://www.roblox.com/users/${useridPrm}/profile`)
   }
 }

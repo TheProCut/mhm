@@ -36,6 +36,7 @@ const placeElement = document.getElementById('place');
 const pfpElement = document.getElementById('pfp');
 const hyrabtn = document.getElementById('hyrabtn');
 const robloxbtn = document.getElementById('robloxbtn');
+const sectionElement = document.getElementById('s1')
 
 function displayInfo(username, userid, command, rank, time, place) {
   usernameElement.textContent = username;

@@ -84,11 +84,11 @@ document.addEventListener('DOMContentLoaded', function() {
         </li>
     
         <li class="nav-item">
-          <a class="nav-link" aria-current="page" href="ranks.html">Rank Purchase</a>
+          <a class="nav-link" aria-current="page" href="/ranks">Rank Purchase</a>
         </li>
 
         <li class="nav-item">
-        <a class="nav-link" aria-current="page" href="partners.html">Partners</a>
+        <a class="nav-link" aria-current="page" href="/partners">Partners</a>
       </li>
 
 

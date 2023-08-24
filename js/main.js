@@ -116,7 +116,7 @@ document.addEventListener('DOMContentLoaded', function() {
         </ul>
     </div>
 </div>
-    `;
+    `; /* e */
   
     nav.innerHTML = navContent;
   });

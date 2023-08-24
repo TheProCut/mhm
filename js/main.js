@@ -78,7 +78,6 @@ document.addEventListener('DOMContentLoaded', function() {
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
-    <!-- phone only: navbar toggler burger menu end -->
     
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
@@ -88,6 +87,8 @@ document.addEventListener('DOMContentLoaded', function() {
             <li class="nav-item">
                 <a class="nav-link" aria-current="page" href="/ranks">Rank Purchase</a>
             </li>
+
+            
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     Partnerships
@@ -99,7 +100,6 @@ document.addEventListener('DOMContentLoaded', function() {
             </li>
             <!-- ADD OTHER LINKS ABOVE -->
         </ul>
-        <ul class="navbar-nav">
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     Important Links
@@ -114,7 +114,6 @@ document.addEventListener('DOMContentLoaded', function() {
                     <li><a class="dropdown-item" href="https://www.youtube.com/channel/UCo1tVFeDsp7BUd8kNhbgMnQ" target="_blank">YouTube</a></li>
                 </ul>
             </li>
-        </ul>
     </div>
 </div>
     `; /* e */

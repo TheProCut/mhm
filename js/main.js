@@ -67,7 +67,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const navContent = `
 <div class="container-fluid">
     <!-- logo start -->
-    <a class="navbar-brand" href="#">
+    <a class="navbar-brand" href="/">
         <img style="height:100px;width:150px;" src="https://media.discordapp.net/attachments/742012486726975518/1128303079914229891/bloxcologo.png" draggable="false" alt="Logo">
     </a>
     <!-- logo end -->

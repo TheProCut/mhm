@@ -87,10 +87,17 @@ document.addEventListener('DOMContentLoaded', function() {
           <a class="nav-link" aria-current="page" href="/ranks">Rank Purchase</a>
         </li>
 
-        <li class="nav-item">
-        <a class="nav-link" aria-current="page" href="/partners">Partners</a>
-      </li>
+     <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        Partnerships
+      </a>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="/partners" target="_blank">Our Partners</a></li>
+        <li><a class="dropdown-item" href="/partner-req" target="_blank">Partnership Requirements</a></li>
+      </ul>
+    </li>
 
+      </ul>
 
     <!-- ADD OTHER LINKS ABOVE -->
 

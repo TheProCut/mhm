@@ -92,8 +92,8 @@ document.addEventListener('DOMContentLoaded', function() {
                     Partnerships
                 </a>
                 <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="/partners" target="_blank">Our Partners</a></li>
-                    <li><a class="dropdown-item" href="/partner-req" target="_blank">Partnership Requirements</a></li>
+                    <li><a class="dropdown-item" href="/partners">Our Partners</a></li>
+                    <li><a class="dropdown-item" href="/partner-req">Partnership Requirements</a></li>
                 </ul>
             </li>
             <!-- ADD OTHER LINKS ABOVE -->

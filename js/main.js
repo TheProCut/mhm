@@ -44,8 +44,9 @@ document.addEventListener('DOMContentLoaded', function() {
   
   const year = new Date().getFullYear();
   const ftrContent = `
-    <br/>
-    <div class="container">
+<p>
+  
+</p>    <div class="container">
       <div class="row">
         <h4>Contact</h4>
         <p>Discord: <a href="https://discord.gg/bloxcosupermarket" target="_blank">/discord</a><br/>

@@ -48,7 +48,7 @@ document.addEventListener('DOMContentLoaded', function() {
     <div class="container">
       <div class="row">
         <h4>Contact</h4>
-        <p>Discord: <a href="https://discord.gg/bloxcosupermarket" target="_blank">discord.gg/bloxcosupermarket</a><br/>
+        <p>Discord: <a href="https://discord.gg/bloxcosupermarket" target="_blank">/discord</a><br/>
         Roblox: <a href="https://www.roblox.com/groups/6235775/Bloxco-Supermarket" target="_blank">roblox.com/groups/6235775/</a></p>
       </div>
       <hr>

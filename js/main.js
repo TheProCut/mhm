@@ -63,6 +63,7 @@ document.addEventListener('DOMContentLoaded', function() {
 /* UPDATE NAVBAR AUTOMATICALLY ON PAGE LOAD */
 document.addEventListener('DOMContentLoaded', function() {
     const nav = document.getElementById('navbar');
+    const hostname = window.location.hostname;
     
     const navContent = `
     <div class="container-fluid">
@@ -116,10 +117,15 @@ document.addEventListener('DOMContentLoaded', function() {
       </ul>
     </div>
     </div>
+    
+    ${hostname === 'dev.bloxco.org' ? `
+    <div class="alert alert-danger" role="alert">
+      This site is for development purposes. Bugs on this site shall not be reported, as they are known. Please use bloxco.org for a stable site version. Thanks!
+    </div>` : ''}
     `;
   
     nav.innerHTML = navContent;
-  });
+});
 
 /* LINK FUNCTION, OPEN A PLATFORM LINK BY USING THE PROVIDED PARAMETERS */
 function link(platform, linktype, extension, extension2, extension3) {

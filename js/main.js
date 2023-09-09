@@ -14,7 +14,7 @@
 /* Name: main.js */
 /* Author: zertybee_5 */
 /* Created (DD-MM-YYYY @ HH:MM): 08-07-2023 @ 18:48CEST */
-/* Updated (DD-MM-YYYY @ HH:MM): 09-07-2023 @ 22:39CEST */
+/* Updated (DD-MM-YYYY @ HH:MM): 09-09-2023 @ 18:13CEST */
 /* Use: This is the main file JavaScript , which is loaded onto all pages in the site. It contains all necessary stuff. */
 
 

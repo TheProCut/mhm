@@ -5,21 +5,35 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Partners - Bloxco Supermarket</title> <!-- SITE TITLE -->
-  <link rel="icon" type="image/png" href="https://bloxco.org/img/BloxcoSiteIcon.png"> <!-- icon -->
-  <link href="https://bloxco.org/secondary.css" rel="stylesheet"> <!-- secondary css -->
+  <link rel="icon" type="image/png" href="img/BloxcoSiteIcon.png"> <!-- icon -->
+  <link href="secondary.css" rel="stylesheet"> <!-- secondary css -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
   <!-- BOOTSTRAP, REQUIRED! -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+ <!-- meta tags -->
+ <meta name="Keywords" content="Shopping, Roblox, roleplay, rostore, fun, games, online shopping, tesco, walmart, bloxco, bloxco shopping, bloxco supermarket, supermarket, online supermarket, purchase">
+ <meta name="Title" content="Bloxco Supermarket">
+ <meta name="Description" content="Take a look at our alliances!">
+ <meta property="og:image" content="https://bloxco.org/img/BloxcoSiteIcon.png">
+ <meta property="og:image:type" content="image/png">
+ <meta name="og:title" content="Bloxco Supermarket">
+ <meta property="og:description" content="Take a look at our alliances!">
+ 
+
 </head>
 
-<body>
+<body class="dark-mode">
   <!-- NAVBAR START -->
-  <nav class="navbar navbar-expand-lg bg-body-tertiary" style="margin-bottom: 10px;" id="navbar">
+  <nav class="navbar text-light  navbar-expand-lg dark-mode" style="margin-bottom: 10px;" id="navbar">
   <!-- automatically updating header -->
   </nav>
   <!-- NAVBAR END -->
+
+  <div id="alert-container">
+    
+  </div>
   <br/>
 
 <section id="s1">
@@ -28,7 +42,7 @@
       <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-5">
   
         <div class="col mb-4"> <!-- DRS -->
-          <div class="profilecard card">
+          <div class="profilecard card dark-mode">
             <img id="partnerLogo" src="img/partners/drs.png" class="card-img-top pfp mx-auto d-block" alt="Server Logo"
               onclick="link('discord', 'invite', 'direct-retail-solutions-856122881086849049')">
             <div class="card-body">
@@ -44,7 +58,7 @@
   
 
         <div class="col mb-4"> <!-- Aldie -->
-            <div class="profilecard card">
+            <div class="profilecard card dark-mode">
               <img id="partnerLogo" src="img/partners/aldie.png" class="card-img-top pfp mx-auto d-block" alt="Server Logo"
                 onclick="link('discord', 'invite', 'tghSWnM7we')"> 
               <div class="card-body">
@@ -59,7 +73,7 @@
           </div>
 
           <div class="col mb-4"> <!-- RyanAir -->
-            <div class="profilecard card">
+            <div class="profilecard card dark-mode">
               <img id="partnerLogo" src="img/partners/ryanair.png" class="card-img-top pfp mx-auto d-block" alt="Server Logo"
                 onclick="link('discord', 'invite', 'ryanair')"> 
               <div class="card-body">
@@ -74,7 +88,7 @@
           </div>
 
           <div class="col mb-4"> <!-- Go Karting Xtreme -->
-            <div class="profilecard card">
+            <div class="profilecard card dark-mode">
               <img id="partnerLogo" src="img/partners/gokartingxtreme.png" class="card-img-top pfp mx-auto d-block" alt="Server Logo"
                 onclick="link('discord', 'invite', 'go-karting-xtreme-279361018721730571')"> 
               <div class="card-body">
@@ -89,7 +103,7 @@
           </div>
 
           <div class="col mb-4"> <!-- The Home Depot  -->
-            <div class="profilecard card">
+            <div class="profilecard card dark-mode">
               <img id="partnerLogo" src="img/partners/thehomedepot.png" class="card-img-top pfp mx-auto d-block" alt="Server Logo"
                 onclick="link('discord', 'invite', 'depot')"> 
               <div class="card-body">
@@ -105,7 +119,7 @@
           </div>
 
           <div class="col mb-4"> <!-- Beast Burgers-->
-            <div class="profilecard card">
+            <div class="profilecard card dark-mode">
               <img id="partnerLogo" src="img/partners/beastburger.png" class="card-img-top pfp mx-auto d-block" alt="Server Logo"
                 onclick="link('discord', 'invite', 'H8Y2wXrWsW')"> 
               <div class="card-body">
@@ -121,7 +135,7 @@
           </div>
 
           <div class="col mb-4"> <!-- Java -->
-            <div class="profilecard card">
+            <div class="profilecard card dark-mode">
               <img id="partnerLogo" src="img/partners/java.png" class="card-img-top pfp mx-auto d-block" alt="Server Logo"
                 onclick="window.open('https://javatech.club/discord','_blank');""> 
               <div class="card-body">
@@ -136,7 +150,7 @@
           </div>
 
                   <div class="col mb-4"> <!-- vinns highschool -->
-            <div class="profilecard card">
+            <div class="profilecard card dark-mode">
               <img id="partnerLogo" src="img/partners/vinns.png" class="card-img-top pfp mx-auto d-block" alt="Server Logo"
                 onclick="link('discord', 'invite', '6HVK5uAyPA')"> 
               <div class="card-body">
@@ -151,7 +165,7 @@
           </div>
 
           <div class="col mb-4"> <!-- YourGroup? -->
-            <div class="profilecard card">
+            <div class="profilecard card dark-mode">
               <img id="partnerLogo" src="img/partners/yourgroup.png" class="card-img-top pfp mx-auto d-block" alt="Server Logo"
                 onclick="link('discord', 'invite', 'bloxcosupermarket')"> 
               <div class="card-body">
@@ -175,11 +189,11 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
       crossorigin="anonymous"></script>
-      <script src="https://bloxco.org/js/main.js"></script>  
+      <script src="js/main.js"></script>  
   </body>
   
   
-  <footer class="bg-body-tertiary text-center" id="ftr">
+  <footer class="  dark-mode text-center" id="ftr">
    <!-- automatically updating footer -->
   </footer>
 

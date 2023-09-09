@@ -1,88 +1,209 @@
-/* DEFINE THE VARIABLES FOR EASY USE */
+/* root */
+
 :root {
-  --bloxco-blue: #2049A4;
-  --hyra-blue: #BFDBFE;
-  --hyra-purple: #DDD6FE;
-  --hyra-yellow: #FEF08A;
-  --hyra-cyan: #A5F3FC;
-  --hyra-pink: #FBCFE8;
-  --hyra-green: #BBF7D0;
-  --hyra-orange: #FED7AA;
-}
+    --bloxco-blue: #2049A4;
 
-/* Change selection color */
-::-moz-selection {
-  color: white;
-  background: var(--bloxco-blue);
-}
 
-::selection {
-  color: white;
-  background: var(--bloxco-blue);
-}
-
-/* make text (if any) on the navbar logo transparent (so people can't see it) */
-.navbar-brand {
-  color: transparent;
-}
-
-.pfp {
-  cursor: pointer; /* make it so when hovering over the pfps, the mouse gets a click finger */
-}
-
-.profilecard {
-  min-height: 100%;
-}
-
-.card {
-  min-height: 100%;
-}
-
-.disclaimer {
-  font-size: 15px;
-  font-style: italic;
-}
-
-.accent {
-  color: var(--bloxco-blue);
-}
-
-.aka {
-  font-size: 16px;
-  font-weight: lighter;
-  /* color: var(--bloxco-blue) */
+    /* hyra*/ 
+    --hyra-blue: #BFDBFE;
+    --hyra-purple: #DDD6FE;
+    --hyra-yellow: #FEF08A;
+    --hyra-cyan: #A5F3FC;
+    --hyra-pink: #FBCFE8;
+    --hyra-green: #BBF7D0;
+    --hyra-orange: #FED7AA;
 }
 
 /* HYRA BACKGROUND COLORS START */
 .bgh-orange {
-  background-color: var(--hyra-orange);
-}
-.bgh-green {
-  background-color: var(--hyra-green);
-}
-.bgh-pink {
-  background-color: var(--hyra-pink);
-}
-.bgh-cyan {
-  background-color: var(--hyra-cyan);
-}
-.bgh-blue {
-  background-color: var(--hyra-blue);
-}
-.bgh-purple {
-  background-color: var(--hyra-purple);
-}
-.bgh-yellow {
-  background-color: var(--hyra-yellow);
-}
-/* HYRA BACKGROUND COLORS END */
+    background-color: var(--hyra-orange);
+  }
+  .bgh-green {
+    background-color: var(--hyra-green);
+  }
+  .bgh-pink {
+    background-color: var(--hyra-pink);
+  }
+  .bgh-cyan {
+    background-color: var(--hyra-cyan);
+  }
+  .bgh-blue {
+    background-color: var(--hyra-blue);
+  }
+  .bgh-purple {
+    background-color: var(--hyra-purple);
+  }
+  .bgh-yellow {
+    background-color: var(--hyra-yellow);
+  }
+  /* HYRA BACKGROUND COLORS END */
 
-section {
-  margin-left: 2%;
+
+/* Body background color */
+body {
+    background-color: #222;
+    color: #fff;
 }
 
-.noselect {
-  -webkit-user-select: none; /* Safari */
-  -ms-user-select: none; /* IE 10 and IE 11 */
-  user-select: none; /* Standard syntax */
+/* Navbar background color */
+.navbar {
+    background-color: #333;
 }
+
+/* Card background color */
+.card {
+    background-color: #333;
+    border: 1px solid #444;
+    color: grey;
+}
+
+/* Footer background color */
+#ftr {
+    background-color: #333;
+}
+
+/* Dark mode styles for links */
+a {
+    color: #e6e6e6;
+}
+
+/* Dark mode styles for headings */
+h1, h2, h3, h4, h5, h6 {
+    color: #fff;
+}
+
+
+/* Dark mode styles for profile card titles */
+.card-title {
+    color: #fff;
+}
+
+/* Dark mode styles for profile card text */
+.card-text {
+    color: grey;
+}
+
+/* Dark mode styles for profile card background */
+.profilecard {
+    background-color: #444;
+    border: 1px solid #555;
+    color: grey;
+    min-height: 100%;
+}
+
+/* Custom Dark Mode CSS */
+
+/* Background color for the entire page */
+body.dark-mode {
+    background-color: #222;
+}
+
+/* Text color for the entire page */
+body.dark-mode,
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode h4,
+body.dark-mode h5,
+body.dark-mode h6,
+body.dark-mode a,
+body.dark-mode .navbar {
+    color: #fff;
+}
+
+/* Navbar background color in dark mode */
+.navbar.dark-mode {
+    background-color: #333;
+}
+
+/* Card background color in dark mode */
+.card.dark-mode {
+    background-color: #333;
+    border: 1px solid #444;
+    color: grey;
+}
+
+/* Footer background color in dark mode */
+#ftr.dark-mode {
+    background-color: #333;
+}
+
+/* Dark mode styles for links */
+a.dark-mode {
+    color: #e6e6e6;
+    transition: color 0.3s ease; /* Added transition property */
+}
+
+a:hover {
+    text-decoration: dotted;
+    color: #5f5f5f !important;
+}
+
+
+/* Accent color */
+.accent{
+    color: var(--bloxco-blue);
+}
+
+/* AlsoKnownAs style */
+.aka {
+    font-weight: lighter;
+}
+
+
+ /* disclaimer */
+.disclaimer {
+    font-weight: lighter;
+    font-style: italic;
+}
+
+
+/* alert edits */
+.alert {
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    transition: box-shadow 0.3s ease;
+    box-shadow: 0 0 20px #fff3cdc5  !important; 
+}
+
+.alert:hover {
+    box-shadow: 0 0 20px #fff3cd !important;
+}
+
+.bloxcoglow {
+    transition: box-shadow 0.3s ease;
+    box-shadow: 0 0 18px #204aa4d6  !important; 
+}
+
+.bloxcoglow:hover {
+    box-shadow: 0 0 20px #206da4 !important;
+}
+
+/* navbar */
+
+        .navbar-nav .nav-link {
+            color: #e4e4e4; /* Default link color */
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: #bdbdbd !important; /* Link color on hover */
+        }
+
+        .important-links .nav-link {
+            color: #fff; /* Text color for Important Links tab */
+        }
+
+        .dropdown-menu {
+            background-color: #333 !important;
+        }
+
+.dropdown-item {
+    transition: background-color 0.3s ease-in-out;
+    transition: color 0.3s ease-in-out;
+}
+
+        .dropdown-item:hover {
+            background-color: #444 !important;
+            color: lightgrey !important;
+        }
+        

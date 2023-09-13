@@ -159,16 +159,33 @@ a:hover {
 
 
 /* alert edits */
-.alert {
+/*alert warning*/ 
+.alert-warning {
     margin-left: 2.5%;
     margin-right: 2.5%;
     transition: box-shadow 0.3s ease;
     box-shadow: 0 0 20px #fff3cdc5  !important; 
 }
 
-.alert:hover {
+.alert-warning:hover {
     box-shadow: 0 0 20px #fff3cd !important;
 }
+
+/*alert primary*/ 
+.alert-primary {
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    transition: box-shadow 0.3s ease;
+    box-shadow: 0 0 20px #cfe2ffb1  !important; 
+}
+
+.alert-primary:hover {
+    box-shadow: 0 0 20px #CFE2FF !important;
+}
+
+
+
+
 
 .bloxcoglow {
     transition: box-shadow 0.3s ease;

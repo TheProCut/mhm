@@ -43,8 +43,8 @@ document.addEventListener('DOMContentLoaded', function() {
   const alertcontainer = document.getElementById('alert-container');
   
   const alerts = `
-  <div class="alert alert-warning redglow">
-  <strong>Notice:</strong> The Bloxco website recently updated to include dark mode. The dark mode feature is in BETA, meaning it may have some unexpected behaviour. If you find any, please report it to zertybee#0 on Discord.
+  <div class="alert alert-primary">
+  <strong>Bloxco Events:</strong> The Bloxco website now has an event calendar! View upcoming events, and more! <a href="/events.html" style="color: darkblue;">Check it out!</a>
 </div>
   
   `;
@@ -118,6 +118,7 @@ document.addEventListener('DOMContentLoaded', function() {
             <li><a class="dropdown-item" href="https://www.google.com/url?q=https%3A%2F%2Finstagram.com%2Fbloxco_socials%3Figshid%3DYmMyMTA2M2Y%3D&sa=D&sntz=1&usg=AOvVaw24aap0fvGWbeUwKKhDGaJv" target="_blank">Instagram</a></li>
             <li><a class="dropdown-item" href="https://www.google.com/url?q=https%3A%2F%2Ftwitter.com%2FBloxcoSocials&sa=D&sntz=1&usg=AOvVaw2m7nE1lR4qeN_NRLM472uc" target="_blank">Twitter</a></li>
             <li><a class="dropdown-item" href="https://www.youtube.com/channel/UCo1tVFeDsp7BUd8kNhbgMnQ" target="_blank">YouTube</a></li>
+            <li><a class="dropdown-item" href="/events" target="_blank">Event Calendar</a></li>
           </ul>
         </li>
       </ul>

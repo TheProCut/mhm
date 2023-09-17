@@ -35,4 +35,4 @@ const desc = document.getElementById('hrotmTxt')
 desc.innerHTML = info.username + " became High Rank of " + info.month + "!"
 
 const hrPfp = document.getElementById('hrotmPfp')
-hrPfp.innerHTML = "<img id='shrProfilePic' style='height: 250px;' src='https://bloxtech.tech/admin/api/userthumb.php?userId="+ info.userid + "&width=150&height=150&format=png' class='card-img-top pfp mx-auto d-block' alt='User icon'>"
+hrPfp.innerHTML = "<img id='shrProfilePic' src='https://bloxtech.tech/admin/api/userthumb.php?userId="+ info.userid + "&width=150&height=150&format=png' class='card-img-top pfp mx-auto d-block' alt='User icon'>"

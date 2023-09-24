@@ -45,6 +45,10 @@ body {
     color: #fff;
 }
 
+.bg-dark {
+    background-color: #222 !important;
+}
+
 /* Navbar background color */
 .navbar {
     background-color: #333;
@@ -110,6 +114,8 @@ body.dark-mode a,
 body.dark-mode .navbar {
     color: #fff;
 }
+
+
 
 /* Navbar background color in dark mode */
 .navbar.dark-mode {

@@ -43,9 +43,10 @@ document.addEventListener('DOMContentLoaded', function() {
   const alertcontainer = document.getElementById('alert-container');
   
   const alerts = `
-  <div class="alert alert-primary">
+  <!-- <div class="alert alert-primary">
   <strong>Bloxco Events:</strong> The Bloxco website now has an event calendar! View upcoming events, and more! <a href="/events.html" style="color: darkblue;">Check it out!</a>
-</div>
+</div> -->
+<!-- NO ACTIVE ALERTS -->
   
   `;
 

@@ -71,7 +71,7 @@ document.addEventListener('DOMContentLoaded', function() {
       <hr>
       <p>&copy; ${year} Bloxco Supermarket. All rights reserved.</p>
       <span class="disclaimer">This site was made by zertybee_5</span>
-      <p class="fs-6 text-lowercase text-start fw-lighter">Site version: 2.01</p>
+      <p class="fs-6 text-lowercase text-start fw-lighter">Site version: OCT17-2023</p>
     </div>
   `;
 

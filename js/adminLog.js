@@ -27,18 +27,21 @@ const authPrm = urlParams.get('auth')
 const rankPrm = urlParams.get('rank')
 const timePrm = urlParams.get('time')
 const placePrm = urlParams.get('place')
-console.log(preTxt+"Parameters successfully loaded!\nUsername:"+usernamePrm+"\nUserID:"+useridPrm+"\nauthPrm:"+authPrm+"\nrankPrm:"+rankPrm+"\ntimePrm:"+timePrm+"\nplacePrm:"+placePrm+"\n")
+const serverid = urlParams.get('serverid')
+console.log(preTxt+"Parameters successfully loaded!\nUsername:"+usernamePrm+"\nUserID:"+useridPrm+"\nauthPrm:"+authPrm+"\nrankPrm:"+rankPrm+"\ntimePrm:"+timePrm+"\nplacePrm:"+placePrm+"\nserveridPrm:"+serverid)
 const usernameElement = document.getElementById('username');
 const cmdElement = document.getElementById('cmd');
 const rankElement = document.getElementById('rank');
 const timeElement = document.getElementById('time');
 const placeElement = document.getElementById('place');
 const pfpElement = document.getElementById('pfp');
+const serveridElement = document.getElementById('serverid');
 const hyrabtn = document.getElementById('hyrabtn');
 const robloxbtn = document.getElementById('robloxbtn');
 const sectionElement = document.getElementById('s1')
 
-function displayInfo(username, userid, command, rank, time, place) {
+
+function displayInfo(username, userid, command, rank, time, place,id) {
   usernameElement.textContent = username;
   cmdElement.textContent = command;
   rankElement.textContent = rank;
@@ -48,6 +51,7 @@ function displayInfo(username, userid, command, rank, time, place) {
   timeElement.textContent = date.toLocaleString();
   placeElement.textContent = place;
   pfpElement.src = `https://bloxtech.tech/admin/api/userthumb.php?userId=${userid}&width=75&height=75&format=png`;
+  serveridElement.textContent = id
   console.log(preTxt+"displayInfo ran successfully. Page loaded.")
 }
 
@@ -56,7 +60,7 @@ if (!authPrm) {
   console.warn(preTxt+"User has no permission to view the page.")
 } else {
   console.log(preTxt+"Loading page by displayInfo()..")
-  displayInfo(usernamePrm, useridPrm, cmdPrm, rankPrm, timePrm, placePrm);
+  displayInfo(usernamePrm, useridPrm, cmdPrm, rankPrm, timePrm, placePrm, serverid);
 }
 
 function btn(platform) {

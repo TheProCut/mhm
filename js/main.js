@@ -14,8 +14,9 @@
 /* Name: main.js */
 /* Author: zertybee_5 */
 /* Created (DD-MM-YYYY @ HH:MM): 08-07-2023 @ 18:48CEST */
-/* Updated (DD-MM-YYYY @ HH:MM): 09-09-2023 @ 18:13CEST */
 /* Use: This is the main file JavaScript, which is loaded onto all pages in the site. It contains all the necessary stuff. */
+
+const version = "OCT18-2023"
 
 
 /* PRINT WELCOME MESSAGE */
@@ -71,7 +72,7 @@ document.addEventListener('DOMContentLoaded', function() {
       <hr>
       <p>&copy; ${year} Bloxco Supermarket. All rights reserved.</p>
       <span class="disclaimer">This site was made by zertybee_5</span>
-      <p class="fs-6 text-lowercase text-start fw-lighter">Site version: OCT17-2023</p>
+      <p class="fs-6 text-lowercase text-start fw-lighter">Site version: ${version}</p>
     </div>
   `;
 

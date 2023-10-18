@@ -43,9 +43,9 @@ document.addEventListener('DOMContentLoaded', function() {
   const alertcontainer = document.getElementById('alert-container');
   
   const alerts = `
-  <div class="alert alert-danger">
+ <!-- <div class="alert alert-danger">
   <strong>KOLOSEUM3:</strong> No one's ever been so rude... <a href="/rude.html" style="color: red;">Read the truth.</a>
-</div>
+</div> -->
 <!-- NO ACTIVE ALERTS -->
   
   `;

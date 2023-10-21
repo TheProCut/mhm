@@ -190,13 +190,24 @@ a:hover {
     box-shadow: 0 0 20px #CFE2FF !important;
 }
 
-.alert {
-    margin: 15px;
+.alert-blurple {
+    box-shadow: 0 0 20px #5865F2 !important;
+    background-color: #5865F2 !important;
+    transition: transform 0.3s ease;
+
 }
 
-/* remove scrollbar */
-::-webkit-scrollbar {
-    display: none;  
+.alert-blurple:hover {
+    box-shadow: 0 0 20px #587cf2bb !important;
+    background-color: #5865F2 !important;
+    transform: scale(1.01);
+}
+
+
+.alert {
+    margin-left: 4% !important;
+    margin-right: 4% !important;
+    margin-top: 15px !important;
 }
 
 
@@ -209,6 +220,11 @@ a:hover {
     box-shadow: 0 0 20px #206da4 !important;
 }
 
+/* remove scrollbar */
+::-webkit-scrollbar {
+    display: none;  
+}
+ 
 /* navbar */
 
         .navbar-nav .nav-link {

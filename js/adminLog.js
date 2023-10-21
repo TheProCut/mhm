@@ -28,7 +28,9 @@ const rankPrm = urlParams.get('rank')
 const timePrm = urlParams.get('time')
 const placePrm = urlParams.get('place')
 const serverid = urlParams.get('serverid')
-console.log(preTxt+"Parameters successfully loaded!\nUsername:"+usernamePrm+"\nUserID:"+useridPrm+"\nauthPrm:"+authPrm+"\nrankPrm:"+rankPrm+"\ntimePrm:"+timePrm+"\nplacePrm:"+placePrm+"\nserveridPrm:"+serverid)
+const singlecmd = urlParams.get('singlecommand')
+
+console.log(preTxt+"Parameters successfully loaded!\nUsername:"+usernamePrm+"\nUserID:"+useridPrm+"\nauthPrm:"+authPrm+"\nrankPrm:"+rankPrm+"\ntimePrm:"+timePrm+"\nplacePrm:"+placePrm+"\nserveridPrm:"+serverid+"\nsinglecommand:"+singlecmd)
 const usernameElement = document.getElementById('username');
 const cmdElement = document.getElementById('cmd');
 const rankElement = document.getElementById('rank');
@@ -39,11 +41,14 @@ const serveridElement = document.getElementById('serverid');
 const hyrabtn = document.getElementById('hyrabtn');
 const robloxbtn = document.getElementById('robloxbtn');
 const sectionElement = document.getElementById('s1')
+const noaccessElement = document.getElementById('noaccess')
+const fullcmdElement = document.getElementById('fullcmd')
 
 
-function displayInfo(username, userid, command, rank, time, place,id) {
+function displayInfo(username, userid, command, rank, time, place, id, singlecmd) {
   usernameElement.textContent = username;
-  cmdElement.textContent = command;
+    cmdElement.textContent = singlecmd;
+    console.warn(preTxt + 'Used singlecmd to display command');
   rankElement.textContent = rank;
   hyrabtn.textContent = `View ${username}'s Hyra Profile`;
   robloxbtn.textContent = `View ${username}'s Roblox Profile`;
@@ -52,15 +57,27 @@ function displayInfo(username, userid, command, rank, time, place,id) {
   placeElement.textContent = place;
   pfpElement.src = `https://bloxtech.tech/admin/api/userthumb.php?userId=${userid}&width=75&height=75&format=png`;
   serveridElement.textContent = id
+  fullcmdElement.innerHTML = "<code>" + command + "</code>"
   console.log(preTxt+"displayInfo ran successfully. Page loaded.")
 }
 
+function noperms() {
+  document.getElementById('noaccess').innerHTML = "<strong>403 Forbidden</strong>: You do not have the required permissions to view this page.";
+  document.getElementById('noaccess').classList.add('alert');
+  document.getElementById('noaccess').classList.add('alert-danger');
+  document.getElementById('noaccess').classList.add('display');
+  document.getElementById('alert-container').classList.add("noview")
+  document.title = "403 Forbidden"
+}
+
+
 if (!authPrm) {
-  sectionElement.textContent = "You cannot view this page.";
+  noperms()
+  sectionElement.textContent = '';
   console.warn(preTxt+"User has no permission to view the page.")
 } else {
   console.log(preTxt+"Loading page by displayInfo()..")
-  displayInfo(usernamePrm, useridPrm, cmdPrm, rankPrm, timePrm, placePrm, serverid);
+  displayInfo(usernamePrm, useridPrm, cmdPrm, rankPrm, timePrm, placePrm, serverid, singlecmd);
 }
 
 function btn(platform) {

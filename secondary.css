@@ -204,6 +204,19 @@ a:hover {
 }
 
 
+.alert-halloween {
+    box-shadow: 0 0 20px #FF9800 !important;
+    background-color: #f56e00dc !important;
+    transition: transform 0.3s ease;
+
+}
+
+.alert-halloween:hover {
+    box-shadow: 0 0 20px #FF9800 !important;
+    background-color: #f56e00dc !important;
+    transform: scale(1.01);
+}
+
 .alert {
     margin-left: 4% !important;
     margin-right: 4% !important;

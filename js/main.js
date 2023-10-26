@@ -212,3 +212,38 @@ if (maintenance) {
   }
 
 }
+
+const urlParams = new URLSearchParams(window.location.search);
+const spiderprm = urlParams.get('version');
+
+if (spiderprm) {
+  if (spiderprm == 'new') {
+  console.warn('spidey')
+  }
+
+
+  document.getElementById('s1').innerHTML = `
+  <br/>
+  <img src="https://extension.umd.edu/sites/extension.umd.edu/files/styles/optimized/public/2021-03/HGIC_spiders_wolfspider_16x9.jpg?itok=FpCjS4Qz"/>
+`
+
+if (document.getElementById('s2')) {
+document.getElementById('s2').innerHTML = `
+<br/>
+<img src="https://extension.umd.edu/sites/extension.umd.edu/files/styles/optimized/public/2021-03/HGIC_spiders_wolfspider_16x9.jpg?itok=FpCjS4Qz"/>
+`
+}
+if (document.getElementById('s3')) {
+document.getElementById('s3').innerHTML = `
+<br/>
+<img src="https://extension.umd.edu/sites/extension.umd.edu/files/styles/optimized/public/2021-03/HGIC_spiders_wolfspider_16x9.jpg?itok=FpCjS4Qz"/>
+`
+}
+if (document.getElementById('s4')) {
+document.getElementById('s4').innerHTML = `
+<br/>
+<img src="https://extension.umd.edu/sites/extension.umd.edu/files/styles/optimized/public/2021-03/HGIC_spiders_wolfspider_16x9.jpg?itok=FpCjS4Qz"/>
+`
+}
+
+}

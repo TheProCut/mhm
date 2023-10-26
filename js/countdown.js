@@ -8,21 +8,21 @@ _      _
                                                       __/ |
                                                      |___/ 
                     bloxco.org              
-                    halloweencountdown.js                  
+                    countdown.js                  
                     by zertybee_5                       */
 /* FILE INFORMATION */
-/* Name: halloweencountdown.js */
+/* Name: countdown.js */
 /* Author: zertybee_5 */
 /* Created (DD-MM-YYYY @ HH:MM): 25-10-2023 @ 17:08CEST */
-/* Use: Count down to Halloween */
+/* Use: Count down to specific dates */
 
-
-var countDownDate = new Date("Nov 1, 2023 19:00").getTime();
+var haCountDownDate = new Date("Nov 1, 2023 19:00").getTime();
+var hrotmCountDownDate = new Date("Oct 29, 2023 17:00").getTime();
 
 var x = setInterval(function() {
-
+  /*halloween*/
   var now = new Date().getTime();
-  var distance = countDownDate - now;
+  var distance = haCountDownDate - now;
   var days = Math.floor(distance / (1000 * 60 * 60 * 24));
   var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
   var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
@@ -33,4 +33,19 @@ var x = setInterval(function() {
     clearInterval(x);
     document.getElementById("halloweencountdown").innerHTML = "no time";
   }
+
+  /*hrotm*/
+  var now = new Date().getTime();
+  var distance = hrotmCountDownDate - now;
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+  document.getElementById("hrotmcountdown").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("hrotmcountdown").innerHTML = "no time";
+  }
+
 }, 1000);

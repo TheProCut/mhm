@@ -39,7 +39,7 @@ console.log(atob(bloxcoMsgb64) + "\n-------------\nWelcome to bloxco.org! Lookin
 
 
 /* ALERTS MODULE */
-/* document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function() {
   const alertcontainer = document.getElementById('alert-container');
   
   const alerts = `
@@ -64,12 +64,12 @@ Find all the pumpkins in the <a href="https://www.roblox.com/games/9901611189/Bl
   `;
 
   alertcontainer.innerHTML = alerts;
-}); */
+});
 
 
 
 /* UPDATE FOOTER AUTOMATICALLY ON PAGE LOAD */
-/* document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function() {
   const footer = document.getElementById('ftr');
   
   const year = new Date().getFullYear();
@@ -89,10 +89,10 @@ Find all the pumpkins in the <a href="https://www.roblox.com/games/9901611189/Bl
   `;
 
   footer.innerHTML = ftrContent;
-}); */
+});
 
 /* UPDATE NAVBAR AUTOMATICALLY ON PAGE LOAD */
-/* document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function() {
     const nav = document.getElementById('navbar');
     const hostname = window.location.hostname;
     
@@ -147,11 +147,10 @@ Find all the pumpkins in the <a href="https://www.roblox.com/games/9901611189/Bl
     `;
   
     nav.innerHTML = navContent;
-}); */
+});
 
 /* LINK FUNCTION, OPEN A PLATFORM LINK BY USING THE PROVIDED PARAMETERS */
 
-/*
 function link(platform, linktype, extension, extension2, extension3) {
   let url = "https://bloxco.org/error.html?c=F001"
 
@@ -175,9 +174,8 @@ function link(platform, linktype, extension, extension2, extension3) {
 
   window.open(url,'_blank');
 }
-*/
 
-const maintenance = true
+const maintenance = false
 
 if (maintenance) {
   document.getElementById('s1').innerHTML = `

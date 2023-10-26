@@ -39,7 +39,7 @@ console.log(atob(bloxcoMsgb64) + "\n-------------\nWelcome to bloxco.org! Lookin
 
 
 /* ALERTS MODULE */
-document.addEventListener('DOMContentLoaded', function() {
+/* document.addEventListener('DOMContentLoaded', function() {
   const alertcontainer = document.getElementById('alert-container');
   
   const alerts = `
@@ -51,17 +51,25 @@ document.addEventListener('DOMContentLoaded', function() {
     <a href="http://www.google.com/url?q=http%3A%2F%2Fdiscord.gg%2FbPQMeZA4PW&sa=D&sntz=1&usg=AOvVaw37-CqJKaqRmebJ85BslNR5">Discord</a>, 
   and make new friends!
 </div>
+
+
+<div class="alert alert-halloween" style="display: block !important;">
+<strong>
+<img src="https://img.icons8.com/?size=256&id=17358&format=png" style="max-height: 25px;"/>
+  Last chance</strong>:
+Find all the pumpkins in the <a href="https://www.roblox.com/games/9901611189/Bloxco-Supermarket">game</a>, and get a limited time badge! You have <strong><span id="halloweencountdown">loading time..</span></strong> remaining.
+</div>
 <!-- NO ACTIVE ALERTS -->
   
   `;
 
   alertcontainer.innerHTML = alerts;
-});
+}); */
 
 
 
 /* UPDATE FOOTER AUTOMATICALLY ON PAGE LOAD */
-document.addEventListener('DOMContentLoaded', function() {
+/* document.addEventListener('DOMContentLoaded', function() {
   const footer = document.getElementById('ftr');
   
   const year = new Date().getFullYear();
@@ -81,10 +89,10 @@ document.addEventListener('DOMContentLoaded', function() {
   `;
 
   footer.innerHTML = ftrContent;
-});
+}); */
 
 /* UPDATE NAVBAR AUTOMATICALLY ON PAGE LOAD */
-document.addEventListener('DOMContentLoaded', function() {
+/* document.addEventListener('DOMContentLoaded', function() {
     const nav = document.getElementById('navbar');
     const hostname = window.location.hostname;
     
@@ -139,13 +147,15 @@ document.addEventListener('DOMContentLoaded', function() {
     `;
   
     nav.innerHTML = navContent;
-});
+}); */
 
 /* LINK FUNCTION, OPEN A PLATFORM LINK BY USING THE PROVIDED PARAMETERS */
+
+/*
 function link(platform, linktype, extension, extension2, extension3) {
   let url = "https://bloxco.org/error.html?c=F001"
 
-  if (platform == 'rblx') { /* if platform is roblox */
+  if (platform == 'rblx') {
    if (linktype == 'gamepass') {
        url = "https://www.roblox.com/game-pass/" + extension
     }
@@ -164,4 +174,33 @@ function link(platform, linktype, extension, extension2, extension3) {
   }
 
   window.open(url,'_blank');
+}
+*/
+
+const maintenance = true
+
+if (maintenance) {
+  document.getElementById('s1').innerHTML = `
+      <br/>
+      <div style="margin-left:100px;">
+              <h2>🔨Whoops! We're having <span class="text-danger">issues</span>😓</h2>
+                <p>We're currently experiencing technical difficulties, and have put our website in Maintenance mode. We're sorry.<br/>
+               For now, you're more than welcome to
+               <div>
+                <a href="https://www.roblox.com/games/9901611189/Bloxco-Supermarket" class="btn btn-primary text-light" style="color: white !important;">Play our Game</a>
+                or
+                <a href="https://discord.gg/bloxcosupermarket" class="btn btn-secondary text-white" style="color: white !important;">Join our Discord Server</a>
+              </p>
+  `
+
+  if (document.getElementById('s2')) {
+    document.getElementById('s2').innerHTML = ""
+  }
+  if (document.getElementById('s3')) {
+    document.getElementById('s3').innerHTML = ""
+  }
+  if (document.getElementById('s4')) {
+    document.getElementById('s4').innerHTML = ""
+  }
+
 }

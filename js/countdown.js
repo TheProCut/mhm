@@ -17,7 +17,7 @@ _      _
 /* Use: Count down to specific dates */
 
 var haCountDownDate = new Date("Nov 1, 2023 19:00").getTime();
-var hrotmCountDownDate = new Date("Oct 29, 2023 17:00").getTime();
+var hrotmCountDownDate = new Date("Oct 29, 2023 12:00").getTime();
 
 var x = setInterval(function() {
   /*halloween*/

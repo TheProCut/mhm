@@ -251,4 +251,4 @@ document.getElementById('s4').innerHTML = `
 
 setTimeout(function(){
    window.location.reload();
-}, 2500);
+}, 500);

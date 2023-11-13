@@ -17,11 +17,11 @@ _      _
 /* Use: Count down to specific dates */
 
 var haCountDownDate = new Date("Nov 1, 2023 19:00").getTime();
-var hrotmCountDownDate = new Date("Oct 29, 2023 12:00").getTime();
+var hrotmCountDownDate = new Date("Nov 29, 2023 17:00").getTime();
 
 var x = setInterval(function() {
   /*halloween*/
-  var now = new Date().getTime();
+  /* var now = new Date().getTime();
   var distance = haCountDownDate - now;
   var days = Math.floor(distance / (1000 * 60 * 60 * 24));
   var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
@@ -32,10 +32,10 @@ var x = setInterval(function() {
   if (distance < 0) {
     clearInterval(x);
     document.getElementById("halloweencountdown").innerHTML = "no time";
-  }
+  } */
 
   /*hrotm*/
-  var now = new Date().getTime();
+/*  var now = new Date().getTime();
   var distance = hrotmCountDownDate - now;
   var days = Math.floor(distance / (1000 * 60 * 60 * 24));
   var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
@@ -46,6 +46,6 @@ var x = setInterval(function() {
   if (distance < 0) {
     clearInterval(x);
     document.getElementById("hrotmcountdown").innerHTML = "no time";
-  }
+  } */
 
 }, 1000);

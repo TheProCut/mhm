@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Command Log - Bloxco Supermarket</title>
+  <link rel="icon" type="image/png" href="https://bloxco.org/img/BloxcoSiteIcon.png">
+  <link href="https://bloxco.org/secondary.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    .container {
+      margin-top: 50px;
+    }
+
+    .user-info {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+
+    .user-info img {
+      width: 75px;
+      height: 75px;
+      border-radius: 50%;
+      margin-right: 20px;
+    }
+
+    .command-title {
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    #more-info {
+      margin-top: 20px;
+    }
+
+    .btn-container {
+      margin-top: 20px;
+    }
+
+    .btn {
+      margin-right: 10px;
+    }
+
+    footer {
+      margin-top: inherit;
+      font-family: inherit;
+      font-size: inherit;
+    }
+
+    .greenhover:hover {
+      color: white !important;
+    }
+
+
+    .display {
+      display: block !important;
+    }
+
+    .noview {
+      display: none !important;
+    }
+    
+  </style>
+</head>
+
+<body class="dark-mode">
+  <nav class="navbar navbar-expand-lg text-light dark-mode" style="margin-bottom: 10px;" style="margin-bottom: 10px;" id="navbar">
+    <div class="container-fluid">
+        <img class="navbar-brand" style="height:100px;width:150px;"
+        src="../img/BloxcoLogo.png" draggable="false" id="nav-logo"/>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav-maincontent" aria-controls="nav-maincontent" aria-expanded="false" aria-label="Toggle navigation" style="filter: invert(0.5);">
+        <span class="navbar-toggler-icon" style="filter: invert(0.5);"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="nav-maincontent">
+      </div>
+      <form class="d-flex" id="nav-addon">
+        </form>
+    </div>
+</nav>
+
+  <div id="alert-container">
+    
+  </div>
+  <br/>
+
+  <section id="s1">
+    <div class="container" id="main">
+      <div class="user-info">
+        <img src="https://bloxtech.tech/admin/api/userthumb.php?userId={userid}&width=75&height=75&format=png"
+          id="pfp" alt="Profile Picture">
+        <h2 class="command-title"><span id="username" class="accent">Loading...</span> ran <code id="cmd"
+            class="accent">command</code></h2>
+      </div>
+      <div id="more-info">
+        <h4>More Information</h4>
+        <p><strong>❕Full command:</strong> <span id="fullcmd"></span></p>
+        <p><strong>Time:</strong> <span id="time"></span></p>
+        <p><strong>Place:</strong> <span id="place"></span></p>
+        <p><strong>User's rank:</strong> <span id="rank"></span></p>
+        <p><strong>ServerID:</strong> <span id="serverid">Not defined</span></p>
+      </div>
+      <div class="btn-container">
+        <div id="join"></div>
+        <p></p>
+        <button onclick="btn('Hyra')" type="button" class="btn btn-primary" id="hyrabtn">View Hyra Profile</button>
+        <button onclick="btn('Rblx')" type="button" class="btn btn-secondary " id="robloxbtn">View Roblox
+          Profile</button>
+      </div> <br/>
+    </div>
+  </section>
+
+  <div id="noaccess"></div>
+
+
+  <br /><br />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script>
+    <script src="../js/main.js"></script><script src="../js/countdown.js"></script><script src="SHRauth.js"></script> <script src="shr.js"></script>
+    <script src="../js/adminLog.js"></script>
+</body>
+
+<footer class="darkmode text-center" id="ftr"></footer>
+
+</html>
